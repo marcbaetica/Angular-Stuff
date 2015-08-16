@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app>
+
+	<head>
+		<title>AngularJS Controller Test</title>
+		<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+		<script type="text/javascript" src="js/angular.min.js"></script>
+	</head>
+
+	<body>
+		<input type="text" ng-model="data.message">
+		<h2>{{data.message + " World!"}}</h2>
+		<div class={{data.message}}>
+			This is the text! Do something with me!!
+		</div>
+	</body>
+</html>

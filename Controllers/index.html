@@ -1,20 +1,25 @@
-<!doctype html>
+<!-- without controller/scope variable -->
 
-<html ng-app>
+<!DOCTYPE html>
+<html ng-app> <!-- this attribute means this element and everything inside of it belongs to this app -->
+
 
 	<head>
-		<title>AngularJS Controller tutorial</title>
-		<link rel="stylesheet" href="css/foundation.min.css">
+		<title>AngularJs Weblage test</title>
+		<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
 		<script type="text/javascript" src="js/angular.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
 	</head>
+
 
 	<body>
 		<input type="text" ng-model="data.message">
-		<h1>{{data.message + " world"}}</h1>
-		<div class ="{{data.message}}">
-			Wrap me with a foundation component!
+		<h2>This is what you typed: {{data.message}}<h2>
+
+		<div class="{{data.message}}">
+			Wrap me in a foundation component! Eg: button warning round right large
 		</div>
+
 	</body>
+
 
 </html>

@@ -1,22 +1,30 @@
+<!-- with controller/scope -->
+
 <!DOCTYPE html>
-<html ng-app>
+<html>
 
 
 	<head>
 		<title>AngularJs Weblage test</title>
 		<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
 		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 
 
 	<body>
-		<input type="text" ng-model="data.message">
-		<h2>This is what you typed: {{data.message}}<h2>
 
-		<div class="{{data.message}}">
-			Wrap me in a foundation component: button warning round right large
-		</div>
+		<div ng-app="">  <!-- this attribute means this element and everything inside of it belongs to this app -->
 
+			<div ng-controller="FirstCtrl">  <!-- everything inside this div will have the scope of this controller -->
+				<!-- <input type="text" ng-model="data.message"> --> <!-- taking away the input and making a controller to provide the data for us -->
+				<h2>This is what you typed: Hello {{data.message}} world!<h2>
+
+				<div class="{{data.message}}">
+					Wrap me in a foundation panel component!
+				</div>
+			</div>
+		<div>
 	</body>
 
 

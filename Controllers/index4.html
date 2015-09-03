@@ -1,0 +1,19 @@
+<DOCTYPE html>
+
+<html ng-app>
+
+	<head>
+		<title> This is an AngularJS application!!!</title>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+	</head>
+
+
+	<body>
+		<input type="text" ng-model="data.inputBox">
+		<h1 class='panel'>{{data.inputBox}}</h1>
+		<input type="text" ng-model="data.button">
+		<input value="Press me!" class="button + {{data.button}}">
+
+	</body>
+</html>

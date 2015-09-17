@@ -1,0 +1,9 @@
+{
+  "name": "todo_app",
+  "main": "index.js",
+  "dependencies" : {
+  	"angular" : "latest",
+  	"bootstrap" : "latest",
+  	"jquery" : "latest"
+  }
+}

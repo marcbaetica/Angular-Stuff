@@ -2,7 +2,6 @@
   "name": "todo_app",
   "main": "server.js",
   "dependencies" : {
-  	"angular" : "latest",
   	"bootstrap" : "latest",
   	"jquery" : "latest",
   	"express" : "latest",

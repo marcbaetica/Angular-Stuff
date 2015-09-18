@@ -1,9 +1,14 @@
 {
   "name": "todo_app",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies" : {
   	"angular" : "latest",
   	"bootstrap" : "latest",
-  	"jquery" : "latest"
+  	"jquery" : "latest",
+  	"express" : "latest",
+  	"mongoose" : "latest",
+  	"body-parser" : "latest",
+  	"method-override" : "latest",
+  	"morgan" : "latest"
   }
 }

@@ -14,17 +14,40 @@
 	</head>
 	
 	<body>
-		<div class="container jumbotron"> <!--jumbotron-->
-			<label>Theme</label><br>
-			<select></select><br>
-			<label>Layout</label><br>
-			<select>test</select>
-		</div>
 
 		<div>
-			<img class="imageBackground"  src="resources/{{layout}}.jpg">
-			<h3 class="{{inputBox}}">BANANAS</h3>
-			<h4 class="{{inputBox}}">This demo is just that.</h4>
+			<img class="imageBackground"  src="resources/inFace.jpg">
+			<h3 class="{{center}}">BANANAS</h3>
+			<h4 class="{{center}}">This demo is just that.</h4>
 		</div>
+	
+		<!---->
+		<div class="well">
+			<form>
+				<div class="form-group">
+					<label>Theme</label>
+					<select class="from-control" ng-model="css" ng-options="bootstrap.url as bootstrap.name for bootstrap in bootstraps"></select>
+				</div>
+				
+				<div class="from-group">
+					<label>Layouts</label>
+					<select ng-model="layout" ng-options="layout.url as layout.name for layout in layouts"></select>
+				</div>
+			</form>
+		</div>
+
+
+		<div>
+			<div>
+				<img class="imageBackground" src="resources/{{layout}}.jpg">
+			</div>
+			<div class="{{center}}">
+				<p>This is the {{center}} alignment and the picture size is {{layout}}.</p>
+				<p>It seems that it worked!</p>
+			</div>
+		</div>
+
+
+
 	</body>
 </html>

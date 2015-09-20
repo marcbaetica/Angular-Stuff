@@ -11,7 +11,7 @@ angular.module('linkApp', []).controller('mainController', function ($scope) {
 	$scope.bootstraps = [
 		{name: 'Basic', url: 'cosmo'},
 		{name: 'Slate', url: 'slate'},
-		{name: 'United', url: 'united'}
+		{name: 'Cyborg', url: 'cyborg'}
 	];
 
 	//set the default layout
@@ -19,9 +19,11 @@ angular.module('linkApp', []).controller('mainController', function ($scope) {
 
 	//create the list of layout files
 	$scope.layouts = [
-		{name: 'Boring', url: 'normal'},
-		{name: 'Circles', url: 'large'},
+		{name: 'Normal', url: 'normal'},
+		{name: 'Large', url: 'large'},
 		{name: 'IN YOUR FACE!', url: 'inFace'}
 	];
+
+	$scope.center = 'centerText';
 
 })

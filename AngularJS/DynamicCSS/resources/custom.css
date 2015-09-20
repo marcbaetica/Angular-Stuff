@@ -17,3 +17,20 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+.normalImage{
+
+}
+.smallImage {
+	width: 25%;
+
+}
+.largeImage {
+	width: 100%;
+}
+.circleImage {
+	width:500px;
+	height:500px;
+	overflow:hidden;
+	margin:0 auto;
+	border-radius:50%;
+}

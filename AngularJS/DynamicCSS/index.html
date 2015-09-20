@@ -29,9 +29,14 @@
 					<select class="from-control" ng-model="css" ng-options="bootstrap.url as bootstrap.name for bootstrap in bootstraps"></select>
 				</div>
 				
-				<div class="from-group">
+				<div class="form-group">
 					<label>Layouts</label>
 					<select ng-model="layout" ng-options="layout.url as layout.name for layout in layouts"></select>
+				</div>
+
+				<div class="form-group">
+					<label>Image Adjustment</label>
+					<select ng-model="imageAdjust" ng-options="imageAdjust.css as imageAdjust.name for imageAdjust in imageAdjustment"></select>
 				</div>
 			</form>
 		</div>
@@ -39,10 +44,10 @@
 
 		<div>
 			<div>
-				<img class="imageBackground" src="resources/{{layout}}.jpg">
+				<img class="imageBackground {{imageAdjust}}" src="resources/{{layout}}.jpg">
 			</div>
 			<div class="{{center}}">
-				<p>This is the {{center}} alignment and the picture size is {{layout}}.</p>
+				<p>This is the {{center}} alignment and the picture size is {{layout}} with an adjustment of {{imageAdjust}}.</p>
 				<p>It seems that it worked!</p>
 			</div>
 		</div>

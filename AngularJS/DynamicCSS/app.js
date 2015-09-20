@@ -26,4 +26,12 @@ angular.module('linkApp', []).controller('mainController', function ($scope) {
 
 	$scope.center = 'centerText';
 
+	$scope.imageAdjust = 'normalImage'
+
+	$scope.imageAdjustment = [
+		{name: 'Small', css: 'smallImage'},
+		{name: 'Normal', css: 'normalImage'},
+		{name: 'Large', css: 'largeImage'},
+		{name: 'Circle', css: 'circleImage'}
+	];
 })

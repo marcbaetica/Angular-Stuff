@@ -12,7 +12,7 @@ app.set('port', process.env.PORT || 8000); //run as $ PORT=1234 node server.js
 
 
 //configuration
-mongoose.connect('mongodb://localhost:27017/test', function() {console.log('succesfully connected!')}); //already existing todoApp collection
+mongoose.connect('mongodb://localhost:27017/test', function() {console.log('Succesfully connected to database!')}); //already existing todoApp collection
 app.use(express.static(__dirname + '/public'));	// set the static files location /public/img will be /img for users
 app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-form-urlencoded
 app.use(bodyParser.json()); // parse application/json

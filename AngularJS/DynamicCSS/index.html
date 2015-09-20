@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="linkApp" ng-controller="mainController">
+	
+	<head>
+		<title>Dynamic CSS adjustments through AngularJS</title>
+
+		<!-- angular and our controller -->
+		<script type="text/javascript" src="resources/angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+
+		<!-- layouts -->
+		<link rel="stylesheet" type="text/css" ng-href="http://bootswatch.com/{{css}}/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="resources/custom.css"> <!--need to add custom layouts-->
+	</head>
+	
+	<body>
+		<div class="container jumbotron"> <!--jumbotron-->
+			<label>Theme</label><br>
+			<select></select><br>
+			<label>Layout</label><br>
+			<select>test</select>
+		</div>
+
+		<div>
+			<img class="imageBackground"  src="resources/{{layout}}.jpg">
+			<h3 class="{{inputBox}}">BANANAS</h3>
+			<h4 class="{{inputBox}}">This demo is just that.</h4>
+		</div>
+	</body>
+</html>

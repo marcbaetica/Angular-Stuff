@@ -1,0 +1,19 @@
+body {
+	padding: 50px;
+}
+.mainDiv {
+	padding-right: 200px;
+	padding-right: 200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.centerText{
+	text-align: center;
+	vertical-align: 10;
+}
+.imageBackground {
+	/*left and right margins to be equal -> block is fixed and centered as a whole*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
